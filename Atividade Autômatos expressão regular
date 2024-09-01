@@ -1,0 +1,51 @@
+import re
+
+print("Bem-vindo ao programa de validação de cadastro!!! ")
+print("Vamos iniciar o cadastro")
+
+padrao_nome = re.compile(r'^[A-Z][a-z]*( [A-Z][a-z]*)* [A-Z][a-z]*$')
+
+print(
+    """Digite o nome, ele deve possuir primeiro e ultimo nome, nomes intermedíarios 
+são opcionais, cada nome deve começar com uma letra maíuscula e serem seguidas de letras
+minusculas e não devem possuir simbolos nem numeros\n""")
+
+while (True):
+  Tentativa_nome = input("Digite aqui o seu nome: ")
+  resultado = re.fullmatch(padrao_nome, Tentativa_nome)
+  if (resultado is None):
+    print("Nome inválido, tente novamente\n")
+  else:
+    print("Nome válido\n")
+    break
+
+print(
+    """Digite seu email, ele deve possuir apenas um @, 1 ou mais letras minusculas  
+antes e depois de @, possuir apenas letras minusculas e terminar com '.com.br' ou '.br'
+\n""")
+
+padrao_email = re.compile(r'^[a-z]+@[a-z]+(.com.br|.br)$')
+while (True):
+  Tentativa_email = input("Digite aqui o seu email: ")
+  resultado = re.fullmatch(padrao_email, Tentativa_email)
+  if (resultado is None):
+    print("Email inválido, tente novamente\n")
+  else:
+    print("Email válido\n")
+    break
+
+print(
+    """Digite sua senha, ela pode possuir apenas letras maiuscula, minusculas e 
+numeros, ela deve possuir pelo menos 1 letra maiuscula e 1 minuscula, por fim devem ter 
+comprimento de no mínimo 8 caracteres
+\n""")
+
+padrao_senha = re.compile(r'^(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{8}$')
+while (True):
+  Tentativa_senha = input("Digite aqui a sua senha: ")
+  resultado = re.fullmatch(padrao_senha, Tentativa_senha)
+  if (resultado is None):
+    print("Senha inválida, tente novamente\n")
+  else:
+    print("Senha válida\n")
+    break
