@@ -54,9 +54,8 @@ def arranjo_letra_f(familia):
     que os filhos, com qualquer quantidade de filhos homens e mulheres, mas que não tiveram dois
     filhos homens consecutivos.
     """
-    # FALTA FAZER ESSA AINDA
-    # regex = re.compile(r"(MM|HH)((mh)*|(hm)*|m(hm)*|h(mh)*)")
-    # return regex.fullmatch(familia)
+    regex = re.compile(r'^(HH|MM)(m|h(?!h))*$')
+    return regex.fullmatch(familia)
 
 
 def arranjo_letra_g(familia):
