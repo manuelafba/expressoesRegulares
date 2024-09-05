@@ -12,7 +12,7 @@ def validarNome(nome):
     Returns:
         bool: Retorna True se o nome for válido conforme os formatos especificados, caso contrário, retorna False.
     """
-    padrao_nome = re.compile(r'^[A-Z][a-z]*( [A-Z][a-z]*)* [A-Z][a-z]*$')
+    padrao_nome = re.compile(r'^[A-Z][a-z]*( [A-Z][a-z]*)? [A-Z][a-z]*$')
     return bool(padrao_nome.fullmatch(nome))
 
 def validarEmail(email):
