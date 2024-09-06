@@ -6,9 +6,11 @@ def arranjo_letra_a(familia):
     velhos que os filhos com pelo menos duas filhas mulheres, ou pelo menos um filho homem,
     ou ainda pelo menos dois filhos homens e uma filha mulher.
     """
-    # FALTA FAZER ESSA AINDA
-    # regex = re.compile(r"(MM|HH)((mh)*|(hm)*|m(hm)*|h(mh)*)")
-    # return regex.fullmatch(familia)
+    minimo_2m = r"((h|m)*m(h|m)*m(h|m)*)" 
+    minimo_1h = r"((h|m)*h(h|m)*)"
+    minimo_2h_1m = r"(((h|m)*h(h|m)*h(h|m)*m(h|m)*)|((h|m)*h(h|m)*m(h|m)*h(h|m)*)|((h|m)*m(h|m)*h(h|m)*h(h|m)*))"
+    regex = re.compile(f"(MH|HM)({minimo_2m}|{minimo_1h}|{minimo_2h_1m})")
+    return regex.fullmatch(familia)
 
 
 def arranjo_letra_b(familia):
@@ -79,7 +81,7 @@ def arranjo_letra_g(familia):
         # Saída do loop caso X e Y tenham valores válidos
             break
         print("Valor inválido para Y. Digite um valor >= 0 e >= X.")
-    regex = re.compile(r"^(M|H){" + str(x) + r"," + str(y) + r"}(m|mm|mmm|(m|h)*mmm+)?") # VERIFICAR A CONDIÇÃO DO FILHOS
+    regex = re.compile(r"^(M|H){" + str(x) + r"," + str(y) + r"}(m|mm|mmm|(m|h)*mmm+)?")
     return regex.fullmatch(familia)
 
 # TESTES
