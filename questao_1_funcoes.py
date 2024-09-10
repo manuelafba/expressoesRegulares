@@ -41,7 +41,7 @@ def validar_senha(senha):
     Returns:
         bool: Retorna True se a senha for válida conforme os formatos especificados, caso contrário, retorna False.
     """
-    padrao_senha = re.compile(r'^(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{8}$')
+    padrao_senha = re.compile(r'^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]{8}$')
     return bool(padrao_senha.fullmatch(senha))
 
 def validar_cpf(cpf):
@@ -74,7 +74,7 @@ def validar_telefone(telefone):
     padrao_telefone = re.compile(r'^\(\d{2}\)\s9\d{4}-\d{4}$|^\(\d{2}\)\s9\d{8}$|^\d{2}\s9\d{8}$')
     return bool(padrao_telefone.fullmatch(telefone))
 
-def validar_data(data):
+def validar_data_hora(data):
     """
     Valida datas de acordo com o formato dd/mm/aaaa hh:mm:ss, onde d, m, a, h, m, s são números.
 
