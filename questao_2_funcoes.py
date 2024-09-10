@@ -81,5 +81,5 @@ def arranjo_letra_g(familia):
         # Saída do loop caso X e Y tenham valores válidos
             break
         print("Valor inválido para Y. Digite um valor >= 0 e >= X.")
-    regex = re.compile(r"^(M|H){" + str(x) + r"," + str(y) + r"}(h|hh|(m|h)*(m|mh|mhh))?$")
+    regex = re.compile(r"^(M|H){" + str(x) + r"," + str(y) + r"}(h|hh|((m|h)*(m|mh|mhh)))?$")
     return bool(regex.fullmatch(familia))
