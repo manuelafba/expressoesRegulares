@@ -1,6 +1,6 @@
 from questao_2_funcoes import arranjo_letra_g
 
-# Lista contento as cadeias para teste da expressão da letra G)
+# Lista contendo as cadeias para teste da expressão da letra G)
 familias_teste = [
     ["M", 1, 1],        # Válido
     ["H", 1, 1],        # Válido

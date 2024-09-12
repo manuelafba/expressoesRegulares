@@ -1,6 +1,6 @@
 from questao_2_funcoes import arranjo_letra_a
 
-# Lista contento as cadeias para teste da expressão da letra A)
+# Lista contendo as cadeias para teste da expressão da letra A)
 familias_teste = [
     "MHhh",     # Válida
     "MHhm",     # Válida

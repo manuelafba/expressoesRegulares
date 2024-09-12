@@ -1,6 +1,6 @@
 from questao_2_funcoes import arranjo_letra_d
 
-# Lista contento as cadeias para teste da expressão da letra D)
+# Lista contendo as cadeias para teste da expressão da letra D)
 familias_teste = [
     'MMmhhmhmmh',       # Válido 
     'MMhmhmmmhhmh',     # Válido
