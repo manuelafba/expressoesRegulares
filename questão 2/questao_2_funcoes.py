@@ -60,26 +60,13 @@ def arranjo_letra_f(familia):
     return bool(regex.fullmatch(familia))
 
 
-def arranjo_letra_g(familia):
+def arranjo_letra_g(familia, x, y):
     """
     Expressão regular que representa arranjos familiares que tem no mínimo x ∈ ℕ e no máximo y ∈ ℕ,
     com x > 0, y > 0, e x ≤ y, de adultos (Hs ou Ms) mais velhos que os filhos, com qualquer
     quantidade de filhos homens e mulheres, mas que os três filhos mais novos não foram homens.
     """
-    # Loop para solicitar ao usuário os valores de X e Y
-    while True:
-        # O valor de X é solicitado até o usuário digitar um valor válido, ou seja, maior que zero.
-        x = int(input("Valor de X: "))
-        if x > 0:
-            break
-        print("Valor inválido para X. Digite um valor >= 0.")
-    while True:
-        # O valor de Y só é solicitado quando o usuário digitar um valor válido para X
-        # # O valor de Y é solicitado até o usuário digitar um valor válido, ou seja, maior que zero e maior ou igual a X.
-        y = int(input("Valor de Y: "))
-        if y > 0 and x <= y:
-        # Saída do loop caso X e Y tenham valores válidos
-            break
-        print("Valor inválido para Y. Digite um valor >= 0 e >= X.")
+    if x <= 0 or y <= 0 or x > y:
+        return False
     regex = re.compile(r"^(M|H){" + str(x) + r"," + str(y) + r"}(h|hh|((m|h)*(m|mh|mhh)))?$")
     return bool(regex.fullmatch(familia))
