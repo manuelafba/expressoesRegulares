@@ -1,5 +1,6 @@
 from questao_1_funcoes import validar_cpf
 
+# Lista contendo as cadeias para teste da expressão regular da máscara de validação de nome
 cpfs_teste = [
     "123.456.789-00", # Válido
     "111.222.333-44", # Válido
@@ -40,7 +41,7 @@ cpfs_teste = [
     "12.345.67890-12",# Inválido (falta um ponto)
 ]
 
-
+# Laço para iterar sobre a lista de cadeias e mostrar quais são válidas ou não
 for cpf in cpfs_teste:
     print(f'CPF: {cpf.ljust(30)} - Válido: {validar_cpf(cpf)}')
 print()

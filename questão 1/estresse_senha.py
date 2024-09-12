@@ -1,5 +1,6 @@
 from questao_1_funcoes import validar_senha
 
+# Lista contendo as cadeias para teste da expressão regular da máscara de validação de senha
 senhas_teste = [
     "518R2r5e",    # Válida
     "F123456A",    # Válida
@@ -55,7 +56,7 @@ senhas_teste = [
     'abcdEFG1kjl', # Inválida (comprimento maior que 8)
 ]
 
-
+# Laço para iterar sobre a lista de cadeias e mostrar quais são válidas ou não
 for senha in senhas_teste:
     print(f'Senha: {senha.ljust(30)} - Válido: {validar_senha(senha)}')
 print()

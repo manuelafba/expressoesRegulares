@@ -12,6 +12,7 @@ def validar_nome(nome):
     Returns:
         bool: Retorna True se o nome for válido conforme os formatos especificados, caso contrário, retorna False.
     """
+    # Expressão regular para representar a máscara de validação de nome
     padrao_nome = re.compile(r'^[A-Z][a-z]*( [A-Z][a-z]*)? [A-Z][a-z]*$')
     return bool(padrao_nome.fullmatch(nome))
 
@@ -27,6 +28,7 @@ def validar_email(email):
     Returns:
         bool: Retorna True se o email for válido conforme os formatos especificados, caso contrário, retorna False.
     """
+    # Expressão regular para representar a máscara de validação de email
     padrao_email = re.compile(r'^[a-z]+@[a-z]+(\.com\.br|\.br)$')
     return bool(padrao_email.fullmatch(email))
 
@@ -41,6 +43,7 @@ def validar_senha(senha):
     Returns:
         bool: Retorna True se a senha for válida conforme os formatos especificados, caso contrário, retorna False.
     """
+    # Expressão regular para representar a máscara de validação de senha
     padrao_senha = re.compile(r'^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]{8}$')
     return bool(padrao_senha.fullmatch(senha))
 
@@ -54,6 +57,7 @@ def validar_cpf(cpf):
     Returns:
         bool: Retorna True se o CPF for válido conforme os formatos especificados, caso contrário, retorna False.
     """
+    # Expressão regular para representar a máscara de validação de CPF
     padrao_cpf = re.compile(r'^\d{3}\.\d{3}\.\d{3}-\d{2}$')
     return bool(padrao_cpf.fullmatch(cpf))
 
@@ -71,6 +75,7 @@ def validar_telefone(telefone):
     Returns:
         bool: Retorna True se o número de telefone for válido conforme os formatos especificados, caso contrário, retorna False.
     """
+    # Expressão regular para representar a máscara de validação de telefone
     padrao_telefone = re.compile(r'^\(\d{2}\)\s9\d{4}-\d{4}$|^\(\d{2}\)\s9\d{8}$|^\d{2}\s9\d{8}$')
     return bool(padrao_telefone.fullmatch(telefone))
 
@@ -84,6 +89,7 @@ def validar_data_hora(data):
     Returns:
         bool: Retorna True se a data for válida conforme os formatos especificados, caso contrário, retorna False.
     """
+    # Expressão regular para representar a máscara de validação de data e horário
     padrao_data_hora = re.compile(r'^\d{2}/\d{2}/\d{4}\s\d{2}:\d{2}:\d{2}$')
     return bool(padrao_data_hora.fullmatch(data))
 
@@ -103,5 +109,6 @@ def validar_real(real):
     Returns:
         bool: Retorna True se o número real for válido conforme os formatos especificados, caso contrário, retorna False.
     """
+    # Expressão regular para representar a máscara de validação de número real
     padrao_num_real = re.compile(r'^[+-]?\d+(\.\d+)?$')
     return bool(padrao_num_real.fullmatch(real))

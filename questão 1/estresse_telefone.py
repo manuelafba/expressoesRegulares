@@ -1,5 +1,6 @@
 from questao_1_funcoes import validar_telefone
 
+# Lista contendo as cadeias para teste da expressão regular da máscara de validação de telefone
 telefones_teste = [
     "(11) 91234-5678",  # Válido
     "(22) 912345678",   # Válido
@@ -48,7 +49,7 @@ telefones_teste = [
     "(33) 99123456789", # Inválido (número a mais)
 ]
 
-
+# Laço para iterar sobre a lista de cadeias e mostrar quais são válidas ou não
 for telefone in telefones_teste:
     print(f'Telefone: {telefone.ljust(30)} - Válido: {validar_telefone(telefone)}')
 print()

@@ -1,5 +1,6 @@
 from questao_1_funcoes import validar_email
 
+# Lista contendo as cadeias para teste da expressão regular da máscara de validação de email
 emails_teste = [
     "joao@empresa.com.br",              # Válida
     "maria@dominio.br",                 # Válida
@@ -56,6 +57,7 @@ emails_teste = [
     "usuario@domain.com"                # Inválida (faltando o .br no final)
 ]
 
+# Laço para iterar sobre a lista de cadeias e mostrar quais são válidas ou não
 for email in emails_teste:
     print(f'Email: {email.ljust(30)} - Válido: {validar_email(email)}')
 print()
