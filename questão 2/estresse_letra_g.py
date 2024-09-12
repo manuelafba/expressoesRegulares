@@ -1,5 +1,6 @@
 from questao_2_funcoes import arranjo_letra_g
 
+# Lista contento as cadeias para teste da expressão da letra G)
 familias_teste = [
     ["M", 1, 1],        # Válido
     ["H", 1, 1],        # Válido
@@ -50,7 +51,7 @@ familias_teste = [
     ["Mhhh", 1, 4],     # Inválido (Termina com 3 filhos homens)
 ]
 
-
+# Laço para iterar sobre a lista de cadeias e mostrar quais são válidas ou não
 for familia, x, y in familias_teste:
     print(f'Família: {familia.ljust(30)} - Válido: {arranjo_letra_g(familia, x, y)}')
 print()

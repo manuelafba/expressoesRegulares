@@ -1,5 +1,6 @@
 from questao_2_funcoes import arranjo_letra_b
 
+# Lista contento as cadeias para teste da expressão da letra B)
 familias_teste = [
     "MHmhmhm",      # Válido
     "HMhmhmhmh",    # Válido
@@ -52,7 +53,7 @@ familias_teste = [
     "MHhmhmhmhm",   # Inválido (Número par de filhas)
 ]
 
-
+# Laço para iterar sobre a lista de cadeias e mostrar quais são válidas ou não
 for familia in familias_teste:
     print(f'Família: {familia.ljust(30)} - Válido: {arranjo_letra_b(familia)}')
 print()
