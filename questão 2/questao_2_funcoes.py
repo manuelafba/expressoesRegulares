@@ -75,8 +75,10 @@ def arranjo_letra_g(familia, x, y):
     com x > 0, y > 0, e x ≤ y, de adultos (Hs ou Ms) mais velhos que os filhos, com qualquer
     quantidade de filhos homens e mulheres, mas que os três filhos mais novos não foram homens.
     """
-    # Expressão regular completa para representar o arranjo familiar pedido na letra G)
+    # Verificação da condição de X e Y
     if x <= 0 or y <= 0 or x > y:
+        # Caso um deles não seja válido, a função retorna False, indicando que a expressão rejeita a cadeia
         return False
+    # Expressão regular completa para representar o arranjo familiar pedido na letra G)
     regex = re.compile(r"^(M|H){" + str(x) + r"," + str(y) + r"}(h|hh|((m|h)*(m|mh|mhh)))?$")
     return bool(regex.fullmatch(familia))
