@@ -1,6 +1,10 @@
 from questao_1_funcoes import validar_senha
 
 senhas_teste = [
+    "518R2r5e",    # Válida
+    "F123456A",    # Válida
+    "1234567T",    # Válida
+    "ropsSoq0",    # Válida
     'Abcdef12',    # Válida
     'abcDef12',    # Válida
     'ABcdef34',    # Válida    

@@ -1,6 +1,9 @@
 from questao_1_funcoes import validar_nome
 
 nomes_teste = [
+        "Ada Lovelace",         # Válido
+        "Alan Turing",          # Válido
+        "Stephen Cole Kleene",  # Válido
         "Joao Silva",           # Válido
         "Maria Joaquina",       # Válido
         "Ana Clara Souza",      # Válido
@@ -27,18 +30,24 @@ nomes_teste = [
         "Ana Paula",            # Válido
         "Joao Lucas Pereira",   # Válido
         "Roberto Carlo Bentes", # Válido
-        "Gusta Henrique Souza", # Válido        
-        "Mariana  Silva",       # Inválido
-        "Carlos",               # Inválido (só um nome)
+        "Gusta Henrique Souza", # Válido
         "Pedro H Silva",        # Inválido (inicial abreviada no nome do meio) ????????????????????
+        "Roberto S",            # Inválido (nome incompleto) ???????????????
+        "Gabriel C Silva",      # Inválido (nome do meio abreviado) ????????????????????
+        "Alan",                 # Inválido (somente um nome)
+        "A1an",                 # Inválido (contém número)
+        "Alan turing",          # Inválido (sobrenome começa com letra minúscula)
+        "alan Turing",          # Inválido (nome começa com letra minúscula)
+        "AlanTuring",           # Inválido (faltando espaço entre nome e sobrenome)
+        "A1an Turing",          # Inválido (contém número)
+        "Mariana  Silva",       # Inválido (espaço extra entre nome e sobrenome)
+        "Carlos",               # Inválido (só um nome)
         "luis Mota",            # Inválido (primeiro nome minúsculo)
         "Joao",                 # Inválido (apenas um nome)    
         "ana Maria",            # Inválido (primeiro nome minúsculo)
         "Ana",                  # Inválido (apenas um nome)
-        "Roberto S",            # Inválido (nome incompleto) ???????????????
         "Fernanda",             # Inválido (apenas um nome)
         "Ricardo",              # Inválido (apenas um nome)
-        "Gabriel C Silva",      # Inválido (nome do meio abreviado) ????????????????????
         "Lucas de Oliveira",    # Inválido (contém preposição)
         "Henrique da Silva",    # Inválido (contém preposição)
         "Camila",               # Inválido (apenas um nome)

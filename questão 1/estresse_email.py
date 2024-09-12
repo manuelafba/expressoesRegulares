@@ -13,6 +13,9 @@ emails_teste = [
     "carlos@portal.com.br",             # Válida
     "joao@com.br",                      # Válida
     "a@b.br",                           # Válida
+    "a@b.com.br",                       # Válida
+    "divulga@ufpa.br",                  # Válida
+    "@",                                # Inválida (somente @)
     "JOAO@empresa.com.br",              # Inválida (letras maiúsculas não permitidas)
     "joao@empresa.com",                 # Inválida (terminação inválida)
     "joao.empresa@com.br",              # Inválida (ponto antes do @)
