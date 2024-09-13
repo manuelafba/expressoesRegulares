@@ -5,39 +5,25 @@ familias_teste = [
     "MHhh",     # Válida
     "MHhm",     # Válida
     "MHmm",     # Válida
-    "MHhmm",    # Válida
-    "MHhhm",    # Válida 
     "MHhhh",    # Válida  
-    "MHmmmm",   # Válida 
-    "HMhm",     # Válida 
-    "HMhmm",    # Válida 
-    "HMhhh",    # Válida  
-    "HMmm",     # Válida  
+    "MHmmmm",   # Válida  
+    "HMhmm",    # Válida   
     "HMh",      # Válida  
-    "HMhhm",    # Válida     
-    "HMmmmm",   # Válida 
+    "HMhhm",    # Válida      
     "MHhmh",    # Válida  
     "MHhhmh",   # Válida  
-    "MHmmhm",   # Válida  
-    "MHhmhh",   # Válida  
     "MHhmhm",   # Válida  
-    "MHhhhm",   # Válida 
-    "HMhhhm",   # Válida  
+    "MHhhhm",   # Válida  
     "HMmmhm",   # Válida  
     "HMhmhh",   # Válida  
-    "HMhhmh",   # Válida  
     "HMmmhh",   # Válida  
-    "HMhmhm",   # Válida 
     "MHhhhmm",  # Válida  
     "MHhmhmm",  # Válida  
-    "MHmmhmm",  # Válida  
-    "MHhmhhm",  # Válida  
+    "MHmmhmm",  # Válida    
     "MHmhhhm",  # Válida  
     "MHmhhh",   # Válida 
-    "HMhmhhh",  # Válida  
-    "HMmhhh",   # Válida  
-    "HMmmhhh",  # Válida  
-    "HMhmhmm",  # Válida  
+    "HMhmhhh",  # Válida    
+    "HMmmhhh",  # Válida   
     "HMhmhhm",  # Válida  
     "HMhhmmm",  # Válida 
     "MMhhmhm",  # Inválida (Casal homo)

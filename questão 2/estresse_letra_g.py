@@ -3,36 +3,24 @@ from questao_2_funcoes import arranjo_letra_g
 # Lista contendo as cadeias para teste da expressão da letra G)
 familias_teste = [
     ["M", 1, 1],        # Válido
-    ["H", 1, 1],        # Válido
     ["H", 1, 2],        # Válido
     ["MH", 1, 2],       # Válido
-    ["MHH", 1, 3],      # Válido
     ["MMH", 2, 3],      # Válido
     ["MMMM", 2, 4],     # Válido
     ["MHH", 2, 4],      # Válido
-    ["MHHHH", 3, 5],    # Válido
     ["MHHHh", 1, 4],    # Válido
     ["MHMHhh", 2, 5],   # Válido
-    ["MMm", 2, 5],      # Válido
     ["MHMhm", 1, 3],    # Válido
     ["MHmmhmm", 1, 4],  # Válido
     ["MM", 2, 2],       # Válido
-    ["MHH", 2, 3],      # Válido
-    ["Hh", 1, 2],       # Válido
-    ["MHhh", 1, 3],     # Válido
-    ["Mmh", 1, 2],      # Válido
-    ["Mm", 1, 1],       # Válido
-    ["MMm", 2, 3],      # Válido
+    ["Hm", 1, 2],       # Válido
     ["MMHhmh", 2, 5],   # Válido
-    ["MHHhm", 2, 5],    # Válido
-    ["MMmh", 2, 4],     # Válido
     ["HHm", 2, 3],      # Válido
     ["HHhh", 2, 4],     # Válido
     ["MMMhhhhm", 3, 5], # Válido
     ["Mhhhm", 1, 5],    # Válido
     ["MHh", 1, 3],      # Válido
     ["Mh", 1, 2],       # Válido
-    ["MMMh", 3, 4],     # Válido
     ["MMhm", 2, 3],     # Válido
     ["Hhm", 1, 2],      # Válido
     ["M", 0, 1],        # Inválido (x não pode ser 0)

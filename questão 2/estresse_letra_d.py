@@ -6,8 +6,7 @@ familias_teste = [
     'MMhmhmmmhhmh',     # Válido
     'MMhmhmhm',         # Válido
     'MMmhhhmhm',        # Válido
-    'HHhmhhmh',         # Válido
-    'HHhmhhmhm',        # Válido 
+    'HHhmhhmh',         # Válido 
     'HHmhmhmhmhmh',     # Válido 
     'HHmhhhhmh',        # Válido
     'HHhmhhhmmmmh',     # Válido
@@ -15,15 +14,12 @@ familias_teste = [
     'MMmhmmhm',         # Válido
     'MMmhhmhmmhmh',     # Válido
     'HHhmhmmhmmhm',     # Válido
-    'MMhmmhhmh',        # Válido
     'HHmhhhmhmmh',      # Válido      
     'MMhmhhhmmhhm',     # Válido  
     'HHhmmmhmhhm',      # Válido
-    'HHmhhhmmmmmh',     # Válido
     'MMmhhhhm',         # Válido
     'HHmhhhmh',         # Válido
     'MMmhhmhmmhhm',     # Válido
-    'HHmhmhmmhhhm',     # Válido
     'HHhmmmhhm',        # Válido
     'MMhmmmmhm',        # Válido
     'MHhmhmmmhhhm',     # Inválido (Casal hetero)

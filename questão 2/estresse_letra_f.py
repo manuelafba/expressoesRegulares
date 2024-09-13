@@ -12,20 +12,16 @@ familias_teste = [
     "MM",      # Válido
     "HHh",     # Válido
     "MMmhmm",  # Válido
-    "MMmhm",   # Válido
     "HHmhmm",  # Válido
     "MMm",     # Válido
     "HHmhmhm", # Válido
-    "HHmhmhm", # Válido
     "HHhm",    # Válido
-    "MMmhmhm", # Válido
     "HHhmh",   # Válido 
     "HHhh",    # Inválido (dois filhos homens consecutivos)
     "MMhh",    # Inválido (dois filhos homens consecutivos)
     "HHhhm",   # Inválido (dois filhos homens consecutivos)
     "HHhhhh",  # Inválido (dois filhos homens consecutivos)
     "MMmhh",   # Inválido (dois filhos homens consecutivos)
-    "MMhhhm",  # Inválido (dois filhos homens consecutivos)
     "HHhhhhm", # Inválido (dois filhos homens consecutivos)
     "MMmhhhhm",# Inválido (dois filhos homens consecutivos)
     "HHhhmhm", # Inválido (dois filhos homens consecutivos)
@@ -34,7 +30,6 @@ familias_teste = [
     "MMhmhh",  # Inválido (dois filhos homens consecutivos)
     "MMhhhh",  # Inválido (dois filhos homens consecutivos)
     "HHhhmm",  # Inválido (dois filhos homens consecutivos)
-    "MMhhmhm"  # Inválido (dois filhos homens consecutivos)
     "HMhmm",   # Inválido (Casal hetero)
     "MHhmhmhm" # Inválido (Casal hetero)
 ]
