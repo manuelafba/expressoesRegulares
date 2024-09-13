@@ -25,7 +25,9 @@ telefones_teste = [
     "99 987654321",     # Válido
     "(66) 98765-4321",  # Válido
     "(02) 91234-5678",  # Válido
-    "(12) 34567-8901",  # Inválido (não começa com 9)
+    "(12)  94567-8901", # Inválido (espaço extra entre o DDD e o 9)
+    "12  945678901",    # Inválido (espaço extra entre o DDD e o 9)
+    "(12)  945678901",  # Inválido (espaço extra entre o DDD e o 9)
     "(12) 345678901",   # Inválido (não começa com 9)
     "12 345678901",     # Inválido (não começa com 9)
     "(22) 92345 6789",  # Inválido (espaço sem hífen)

@@ -76,7 +76,7 @@ def validar_telefone(telefone):
         bool: Retorna True se o número de telefone for válido conforme os formatos especificados, caso contrário, retorna False.
     """
     # Expressão regular para representar a máscara de validação de telefone
-    padrao_telefone = re.compile(r'^\(\d{2}\)\s9\d{4}-\d{4}$|^\(\d{2}\)\s9\d{8}$|^\d{2}\s9\d{8}$')
+    padrao_telefone = re.compile(r'^\(\d{2}\) 9\d{4}-\d{4}$|^\(\d{2}\) 9\d{8}$|^\d{2} 9\d{8}$')
     return bool(padrao_telefone.fullmatch(telefone))
 
 def validar_data_hora(data):
@@ -90,7 +90,7 @@ def validar_data_hora(data):
         bool: Retorna True se a data for válida conforme os formatos especificados, caso contrário, retorna False.
     """
     # Expressão regular para representar a máscara de validação de data e horário
-    padrao_data_hora = re.compile(r'^\d{2}/\d{2}/\d{4}\s\d{2}:\d{2}:\d{2}$')
+    padrao_data_hora = re.compile(r'^\d{2}/\d{2}/\d{4} \d{2}:\d{2}:\d{2}$')
     return bool(padrao_data_hora.fullmatch(data))
 
 def validar_real(real):
