@@ -32,9 +32,9 @@ nomes_teste = [
     "Joao Lucas Pereira",   # Válido
     "Roberto Carlo Bentes", # Válido
     "Gusta Henrique Souza", # Válido
-    "Pedro H Silva",        # Inválido (inicial abreviada no nome do meio) 
-    "Roberto S",            # Inválido (nome incompleto) 
-    "Gabriel C Silva",      # Inválido (nome do meio abreviado) 
+    "Pedro H Silva",        # Válido
+    "Roberto S",            # Válido
+    "Gabriel C Silva",      # Válido
     "Alan",                 # Inválido (somente um nome)
     "A1an",                 # Inválido (contém número)
     "Alan turing",          # Inválido (sobrenome começa com letra minúscula)
