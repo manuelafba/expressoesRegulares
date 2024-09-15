@@ -21,15 +21,14 @@ familias_teste = [
     "HH",           # Inválido (casal sem filhos)
     "HHhmhmhmhh",   # Inválido (dois filhos seguidos)
     "HHhmhmmhmhm",  # Inválido (duas filhas seguidas)
-    "MHhmhmhmhmh",  # Inválido (Casal hetero)
+    "MHhmhmhmhmh",  # Inválido (casal hetero)
     "HHhmm",        # Inválido (sem alternância do sexo dos filhos)
-    "HMmhmhmhm",    # Inválido (Casal hetero)
+    "HMmhmhmhm",    # Inválido (casal hetero)
     "MMmmmmh",      # Inválido (sem alternância do sexo dos filhos)
     "HHhhhm",       # Inválido (sem alternância do sexo dos filhos)
     "MMhhmhmhh",    # Inválido (dois filhos seguidos)
     "HHhmhmmmhm",   # Inválido (três filhas seguidas)
-    "HMm",          # Inválido (Casal hetero)
-    "MHhmhm",       # Inválido (Casal hetero)
+    "HMm",          # Inválido (casal hetero)
 ]
 
 # Laço para iterar sobre a lista de cadeias e mostrar quais são válidas ou não
