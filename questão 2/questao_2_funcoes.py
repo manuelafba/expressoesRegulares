@@ -54,7 +54,7 @@ def arranjo_letra_e(familia):
     que os filhos, em que o sexo dos filhos é alternado conforme a ordem de nascimento.
     """
     # Expressão regular completa para representar o arranjo familiar pedido na letra E)
-    regex = re.compile(r"^(MM|HH)((mh)*|(hm)*|m(hm)*|h(mh)*)$")
+    regex = re.compile(r"^(MM|HH)((mh)+|(hm)+|m(hm)*|h(mh)*)$")
     return bool(regex.fullmatch(familia))
 
 
