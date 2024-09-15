@@ -6,7 +6,6 @@ emails_teste = [
     "maria@dominio.br",                 # Válida
     "teste@provedor.com.br",            # Válida
     "exemplo@abc.br",                   # Válida
-    "fulano@servico.com.br",            # Válida
     "jose@site.com.br",                 # Válida
     "alice@projeto.br",                 # Válida
     "pedro@negocio.com.br",             # Válida
