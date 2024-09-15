@@ -2,8 +2,6 @@ from questao_2_funcoes import arranjo_letra_c
 
 # Lista contendo as cadeias para teste da expressão da letra C)
 familias_teste = [
-    "MH",           # Válido
-    "HM",           # Válido
     "MHmh",         # Válido
     "HMmmhh",       # Válido 
     "MHmmmmmh",     # Válido  
@@ -16,6 +14,8 @@ familias_teste = [
     "HMmhmmh",      # Válido
     "MHmhmh",       # Válido
     "MHmhmhh",      # Válido
+    "MH",           # Inválido
+    "HM",           # Inválido
     "MHm",          # Inválido (Somente uma filha)
     "HMh",          # Inválido (Somente um filho)
     "HHmmh",        # Inválido (Casal homo)

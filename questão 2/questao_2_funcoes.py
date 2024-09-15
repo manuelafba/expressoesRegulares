@@ -33,7 +33,7 @@ def arranjo_letra_c(familia):
     velhos que os filhos, com a filha mais velha mulher e o filho mais novo homem.
     """
     # Expressão regular completa para representar o arranjo familiar pedido na letra C)
-    regex = re.compile(r"^(MH|HM)(m(m|h)*h)*$")
+    regex = re.compile(r"^(MH|HM)(m(m|h)*h)$")
     return bool(regex.fullmatch(familia))
 
 
