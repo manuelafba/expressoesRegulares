@@ -30,6 +30,7 @@ cpfs_teste = [
     "123-456-789-00",       # Inválido (hífen no lugar dos pontos)
     "123.456.789.00",       # Inválido (ponto no lugar dos hífens)  
     "12.345.67890-12",      # Inválido (falta um ponto)
+    "!@#.$%&.!*#"           # Inválido Caracteres especiais
 ]
 
 # Laço para iterar sobre a lista de cadeias e mostrar quais são válidas ou não
