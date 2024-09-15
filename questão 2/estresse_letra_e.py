@@ -2,8 +2,6 @@ from questao_2_funcoes import arranjo_letra_e
 
 # Lista contendo as cadeias para teste da expressão da letra E)
 familias_teste = [
-    "MM",           # Válido
-    "HH",           # Válido
     "MMmh",         # Válido
     "MMhm",         # Válido
     "HHmh",         # Válido
@@ -19,6 +17,8 @@ familias_teste = [
     "HHh",          # Válido
     "HHmhmhmhm",    # Válido
     "MMh",          # Válido
+    "MM",           # Inválido (casal sem filhos)
+    "HH",           # Inválido (casal sem filhos)
     "HHhmhmhmhh",   # Inválido (dois filhos seguidos)
     "HHhmhmmhmhm",  # Inválido (duas filhas seguidas)
     "MHhmhmhmhmh",  # Inválido (Casal hetero)
