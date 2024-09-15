@@ -23,7 +23,7 @@ data_horas_teste = [
     "2020/01/01 00:00:00",  # Inválido (formato inválido)
     "01012003 000000",      # Inválido (sem / e :)
     "01/01/200300:00:00",   # Inválido (sem espaço)
-    "00:00:00 01/01/2020"
+    "00:00:00 01/01/2020" # Inválido (hora antes da data)
     ]
 
 # Laço para iterar sobre a lista de cadeias e mostrar quais são válidas ou não
