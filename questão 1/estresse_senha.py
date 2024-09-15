@@ -32,6 +32,7 @@ senhas_teste = [
     'abcdefgh',    # Inválida (Não tem maiúscula e número)
     '1234abcd',    # Inválida (Não tem maiúscula)
     'abcdEFG1kjl', # Inválida (Tem mais de 8 caracteres)
+    '!@#$%&*&' ## Inválida (Caracteres especiais)
 ]
 
 # Laço para iterar sobre a lista de cadeias e mostrar quais são válidas ou não
