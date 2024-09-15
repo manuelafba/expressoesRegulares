@@ -6,58 +6,31 @@ nomes_teste = [
     "Alan Turing",          # Válido
     "Stephen Cole Kleene",  # Válido
     "Joao Silva",           # Válido
-    "Maria Joaquina",       # Válido
     "Ana Clara Souza",      # Válido
-    "Carla Correia",        # Válido
     "Lucas Oliveira Lima",  # Válido
-    "Joao Pedro Souza",     # Válido
     "Rafael Almeida",       # Válido
     "Bianca Almeida Souza", # Válido
-    "Alessandra Silva",     # Válido
-    "Luana Costa",          # Válido
-    "Gustavo Silva",        # Válido
     "Caio Moura",           # Válido
-    "Lucas Pereira",        # Válido
-    "Mateus Lira",          # Válido
-    "Roberto Almeida",      # Válido
-    "Paulo Souza",          # Válido
-    "Fernanda Alves",       # Válido
-    "Lucas Costa",          # Válido
-    "Paulo Nogueira",       # Válido
-    "Aline Ferreira",       # Válido
-    "Andre Silva",          # Válido
     "Larissa Souza",        # Válido
-    "Pedro Henrique Silva", # Válido
-    "Ana Paula",            # Válido
-    "Joao Lucas Pereira",   # Válido
     "Roberto Carlo Bentes", # Válido
     "Gusta Henrique Souza", # Válido
     "Pedro H Silva",        # Válido
     "Roberto S",            # Válido
-    "Gabriel C Silva",      # Válido
-    "Alan",                 # Inválido (somente um nome)
+    "G C Silva",            # Válido
+    "Alan",                 # Inválido (falta o sobrenome)
     "A1an",                 # Inválido (contém número)
-    "Alan turing",          # Inválido (sobrenome começa com letra minúscula)
-    "alan Turing",          # Inválido (nome começa com letra minúscula)
+    "Alan turing",          # Inválido (inicial minúscula do sobrenome)
+    "alan Turing",          # Inválido (inicial minúscula do primeiro nome)
     "AlanTuring",           # Inválido (faltando espaço entre nome e sobrenome)
     "A1an Turing",          # Inválido (contém número)
     "Mariana  Silva",       # Inválido (espaço extra entre nome e sobrenome)
-    "Carlos",               # Inválido (só um nome)
-    "luis Mota",            # Inválido (primeiro nome minúsculo)
-    "Joao",                 # Inválido (apenas um nome)    
-    "ana Maria",            # Inválido (primeiro nome minúsculo)
+    "luis Mota",            # Inválido (inicial minúscula do primeiro nome) 
+    "ana Maria",            # Inválido (inicial minúscula do primeiro nome)
     "Ana",                  # Inválido (apenas um nome)
-    "Fernanda",             # Inválido (apenas um nome)
-    "Ricardo",              # Inválido (apenas um nome)
-    "Lucas de Oliveira",    # Inválido (contém preposição)
-    "Henrique da Silva",    # Inválido (contém preposição)
+    "Henrique da Silva",    # Inválido (nome do meio não começa com maiúscula)
     "Camila",               # Inválido (apenas um nome)
-    "Joao da Silva",        # Inválido (contém preposição)
+    "Joao da Silva",        # Inválido (nome do meio não começa com maiúscula)
     "Leonardo",             # Inválido (apenas um nome)    
-    "Flavia",               # Inválido (apenas um nome)
-    "Renato",               # Inválido (apenas um nome)
-    "Carla",                # Inválido (apenas um nome)
-    "Antonio",              # Inválido (apenas um nome)
     ]
 
 # Laço para iterar sobre a lista de cadeias e mostrar quais são válidas ou não
